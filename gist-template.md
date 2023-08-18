@@ -54,6 +54,16 @@ Below is an example of using both the `^` and `$` together in Regex. For this on
 
 ### Quantifiers
 
+Quantifiers in regex are special characters that specify the number of occurrences of a preceding character or group in a pattern. The most commonly used quantifiers are the following ones!
+
+`*` - Matches every occurrence of the preceding character <br>
+`+` - Matches one or more occurrence of a preceding character or group <br>
+`?` - Matches 0 or one occurrence of a preceding character or group, kinda just shows if it exists or not. <br>
+`{n}` - Matches exactly "n" occurrences of the preceding character or group <br>
+`{n,m}` - Matches between n and m occurrences of the preceding character or group. <br>
+
+<img src="./assets/images/quantifier.JPG">
+
 ### OR Operator
 
 ### Character Classes

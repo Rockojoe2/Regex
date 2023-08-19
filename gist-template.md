@@ -74,20 +74,36 @@ The OR operator is represented by the `|` symbol in the regex. What the OR opera
 
 Character classes are enclosed in square brackets `[]`, and allow you define a group of characters that you want to match without having to list each character individually. Examples of character classes that you might see are...
 
-[a-z] - Matches any lowercase letter
-[A-Z] - Matches any upper case letter
-[A-Za-z] - Matches any uppercase or lowercase letter
-[0-9] - Matches any single digit
+[a-z] - Matches any lowercase letter <br>
+[A-Z] - Matches any upper case letter <br>
+[A-Za-z] - Matches any uppercase or lowercase letter <br>
+[0-9] - Matches any single digit <br>
 
 ### Flags
 
+Flags are added after the closing delimiter of the regular expression. Flags control various aspects of pattern matching and behavior. The most common flags are 
+
+`i` - The `i` flag makes things not case sensitive <br>
+`g` - Enables global matching so the regex will find all occurrences of the pattern in the input string, and not just the first one. <br>
+`m` - Enables multiline matching. This affects how the ^ and $ anchors work. With the m flag, ^ matches the start of each line, and $ matches the end of each line. <br>
+`y` - Causes the regular expression to match only at the index indicated by the lastIndex property of the regular expression object. <br>
+
+
 ### Grouping and Capturing
+
+A way to treat multiple characters as a single unit, and are created by placing the characters to be grouped inside a set of parenthesis.
 
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
 
+By default, quantifiers are greedy. What greedy means is that they try to match as much text as possible, while still allowing the rest of the pattern to match. An example of a greedy match would be the regex `/.*/`
+
+Lazy matching is the opposite, where it tries to match as little text as possible, while still allowing the rest of the pattern to match. This is done by adding a ? in your regex because ? returns either 0 or 1 of the results. 
+
 ### Boundaries
+
+Boundaries define positions in the input text where certain conditions are met, but they don't consume any characters. Boundary markers such as `^` and `$` allow you to anchor the regex pattern to the beginning and end of the line respectively. This is to ensure that a pattern is found only at a specific location within the text.
 
 ### Back-references
 

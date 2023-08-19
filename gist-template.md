@@ -66,7 +66,18 @@ Quantifiers in regex are special characters that specify the number of occurrenc
 
 ### OR Operator
 
+The OR operator is represented by the `|` symbol in the regex. What the OR operator does is that it allows you to look for one thing or another, and have it return them. In the example below, I used an OR operator with apples and bananas, and ran two different strings to show the result.
+
+<img src="./assets/images/or1.jpg">
+
 ### Character Classes
+
+Character classes are enclosed in square brackets `[]`, and allow you define a group of characters that you want to match without having to list each character individually. Examples of character classes that you might see are...
+
+[a-z] - Matches any lowercase letter
+[A-Z] - Matches any upper case letter
+[A-Za-z] - Matches any uppercase or lowercase letter
+[0-9] - Matches any single digit
 
 ### Flags
 

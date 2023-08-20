@@ -1,10 +1,36 @@
-# Title (replace with your title)
+# Regex Explained!
 
 Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex is a useful tool in order to check if things are valid or not. Things like e-mail, passwords, phone numbers, and much more can be checked with regex to make sure that it matches proper format!
+
+For my example, I will use an example of a regex for social security numbers!
+
+Social security numbers are written as followed
+
+XXX-XX-XXXX - 3 number digits, then 2 number digits, and lastly 4 number digits.
+
+ The way you would write this regex would be...
+
+` /^(\d{3}-\d{2}-\d{4})$/`
+
+^ and $ - anchors that respectively indicate the start and end of the string. This means the whole string must match the pattern. <br>
+
+\d matches any digit (equivalent to [0-9]). <br>
+
+{3} specifies that the preceding element (in this case, \d) must occur exactly 3 times.<br>
+
+`-` - matches a literal hyphen character.<br>
+
+{2} specifies that the preceding element (again, \d) must occur exactly 2 times. <br>
+
+{4} specifies that the preceding element (once more, \d) must occur exactly 4 times.
+
+Below would be an example of what it would look like
+
+<img src="./assets/images/summary1.jpg">
 
 ## Table of Contents
 
@@ -95,6 +121,8 @@ A way to treat multiple characters as a single unit, and are created by placing 
 
 ### Bracket Expressions
 
+Bracket expressions are a awy to match a single character from a specific set of characters in regex. They are enclosed in square brackets ,and allow you to defien a list of characters that you want to match.
+
 ### Greedy and Lazy Match
 
 By default, quantifiers are greedy. What greedy means is that they try to match as much text as possible, while still allowing the rest of the pattern to match. An example of a greedy match would be the regex `/.*/`
@@ -107,8 +135,17 @@ Boundaries define positions in the input text where certain conditions are met, 
 
 ### Back-references
 
+Back-references are used to match the same text that was previously captured by capturing a group within the same regex pattern, back-references are like variables in regular expressions. Backreferences can be very useful for various regex tasks, such as finding repeated patterns and validating input formats.
+
 ### Look-ahead and Look-behind
+
+Look-ahead and Look-behind allow you to assert conditions in a pattern without actually including the matched text in the final result. They're similar to anchors, but they match characters and return either true or false as their result of whether there was a match or not.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Joey, and I'm currently attending the UTA bootcamp! My goal is to get back in the tech field and get a job as an entry level software engineer!
+
+Here's is my Github profile!
+
+[Rockojoe2](https://github.com/Rockojoe2)
+
